@@ -16,8 +16,16 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
-            textView
+            Text("Hello, world!").font(.largeTitle)
+            textView.font(.caption)
+            HStack{
+                Text("HStack1 Data")
+                    .font(.largeTitle)
+                Text("HStack2 Data")
+                    .font(.caption)
+                Text("HStack3 Data")
+                    .font(.caption2)
+            }
         }
         .padding()
     }
